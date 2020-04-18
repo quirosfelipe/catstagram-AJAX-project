@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <title>Catstagram</title>
+  <style>
+    body {
+      margin: 50px;
+      text-align: center;
+      background-color: rgb(154, 222, 237);
+    }
+
+    .comments {
+      background-color: rgb(198, 224, 228);
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <h1>Kitten Pic</h1>
+    <button id="new-pic">New Pic!</button>
+    <div class="error"></div>
+    <div class="loader"></div>
+    <div class="error"></div>
+    <img class="cat-pic" src="" />
+    <div class="score-container">
+      <div class="score-display">
+        <span>Popularity Score: </span>
+        <span class="score">0</span>
+      </div>
+      <div>
+        <button id="upvote">Upvote</button>
+        <button id="downvote"=>Downvote</button>
+      </div>
+    </div>
+    <form class="comment-form">
+      <div class="user-comment-container">
+        <label for="user-comment">Comment:</label>
+        <input required name="user-comment" id="user-comment" class="user-comment" placeholder=" Add a comment... " />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="comments"></div>
+  </section>
+
+  <script src="./events.js"></script>
+</body>
+
+</html>
